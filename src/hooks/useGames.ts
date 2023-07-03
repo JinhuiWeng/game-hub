@@ -14,12 +14,14 @@ export interface Game {
     background_image: string;
     parent_platforms: { platform: Platform }[];
     metacritic: number;
+    rating_top: number;
+    rating: number;
   }
   
 // params: query string parameter to the data hook
 const useGames = (gameQuery: GameQuery) => useData<Game>('/games', { 
     params: {
-        genres: gameQuery.genre?.id, platforms: gameQuery.platform?.id, ordering: gameQuery.sortOrder
+        genres: gameQuery.genre?.id, platforms: gameQuery.platform?.id, ordering: gameQuery.sortOrder, search:gameQuery.searchText
     }}, 
     [gameQuery]);
 

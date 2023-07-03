@@ -1,14 +1,15 @@
-
-import useData from "./useData";
+import genres from '../data/genres';
+// import useData from "./useData";
 
 export interface Genre {
     id: number;
     name: string;
     image_background: string;
-    // parent_platforms: { platform: Platform }[];
-    // metacritic: number;
 }
 
 
-const useGenres = () => useData<Genre>('/genres');
+// const useGenres = () => useData<Genre>('/genres');
+
+const useGenres = () => ({ data: genres, isLoading: false, error: null })
+
 export default useGenres;
