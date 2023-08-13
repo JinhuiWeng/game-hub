@@ -6,7 +6,7 @@ A RAWG.IO mock up website.
 
 ## Functionality
 - Search a game
-- Sort gamas based on genres, platforms, score etc.
+- Sort games based on genres, platforms, score etc.
 - View games in a detailed page
 
 ## Built with
