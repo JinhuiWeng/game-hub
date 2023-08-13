@@ -2,7 +2,7 @@
 
 A RAWG.IO mock up website.
 
-[Live Demo](https://vercel.com/jinhuiweng/game-hub)
+[Live Demo](https://game-hub-jinhuiweng.vercel.app/)
 
 ## Functionality
 - Search a game
